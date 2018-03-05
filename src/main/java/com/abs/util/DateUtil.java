@@ -1,13 +1,3 @@
-/*
- * IBM Confidential OCO Source Materials
- * 
- * #ID# Industries and Solutions team at IBM Research - China
- * 
- * (C) Copyright IBM Corp. 2016
- * 
- * The source code for this program is not published or otherwise divested of its trade secrets.
- * 
- */
 package com.abs.util;
 
 import java.text.SimpleDateFormat;

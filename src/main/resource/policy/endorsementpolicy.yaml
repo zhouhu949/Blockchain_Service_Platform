@@ -1,0 +1,15 @@
+---
+identities:  
+    user0: {"role": {"name": "member", "mspId": "Org0MSP"}} 
+    user1: {"role": {"name": "member", "mspId": "Org1MSP"}}
+    admin0: {"role": {"name": "admin", "mspId": "Org0MSP"}} 
+    admin1: {"role": {"name": "admin", "mspId": "Org1MSP"}}
+
+policy: 
+    2-of: 
+      - 1-of:
+        - signed-by: "user0" 
+        - signed-by: "admin0"
+      - 1-of:
+        - signed-by: "user1"
+        - signed-by: "admin1"

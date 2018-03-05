@@ -1,0 +1,206 @@
+﻿[
+  {
+    "name": "LOAN_APPLY",
+    "category": "CAT_LOAN",
+    "previousCategories": null
+  },
+  {
+    "name": "LOAN_APPROVE",
+    "category": "CAT_LOAN",
+    "previousCategories": [
+      "CAT_LOAN"
+    ]
+  },
+  {
+    "name": "LOAN_REJECT",
+    "category": "CAT_LOAN",
+    "previousCategories": [
+      "CAT_LOAN"
+    ]
+  },
+  {
+    "name": "LOAN_RESULT_NOTIFY",
+    "category": "CAT_LOAN",
+    "previousCategories": [
+      "CAT_LOAN"
+    ]
+  },
+  {
+    "name": "LOAN_RESULT_CONFIRM",
+    "category": "CAT_LOAN",
+    "previousCategories": [
+      "CAT_LOAN"
+    ]
+  },
+  {
+    "name": "LOAN_RESULT_REJECT",
+    "category": "CAT_LOAN",
+    "previousCategories": [
+      "CAT_LOAN"
+    ]
+  },
+  {
+    "name": "MORTGAGE_DOC_UPLOAD",
+    "category": "CAT_MORT",
+    "previousCategories": [
+      "CAT_LOAN",
+      "CAT_MORT"
+    ]
+  },
+  {
+    "name": "MORTGAGE_DOC_CONFIRM",
+    "category": "CAT_MORT",
+    "previousCategories": [
+      "CAT_MORT"
+    ]
+  },
+  {
+    "name": "MORTGAGE_DOC_REJECT",
+    "category": "CAT_MORT",
+    "previousCategories": [
+      "CAT_MORT"
+    ]
+  },
+  {
+    "name": "DIFF_RESULT_NOTIFY",
+    "category": "CAT_DIFF",
+    "previousCategories": [
+      "CAT_LOAN",
+      "CAT_DIFF"
+    ]
+  },
+  {
+    "name": "DIFF_RESULT_CONFIRM",
+    "category": "CAT_DIFF",
+    "previousCategories": [
+      "CAT_DIFF"
+    ]
+  },
+  {
+    "name": "DIFF_RESULT_REJECT",
+    "category": "CAT_DIFF",
+    "previousCategories": [
+      "CAT_DIFF"
+    ]
+  },
+  {
+    "name": "REPAY_PLAN_UPLOAD",
+    "category": "CAT_REPAY_PLAN",
+    "previousCategories": [
+      "CAT_LOAN",
+      "CAT_REPAY_PLAN"
+    ]
+  },
+  {
+    "name": "REPAY_PLAN_CONFIRM",
+    "category": "CAT_REPAY_PLAN",
+    "previousCategories": [
+      "CAT_REPAY_PLAN"
+    ]
+  },
+  {
+    "name": "REPAY_PLAN_REJECT",
+    "category": "CAT_REPAY_PLAN",
+    "previousCategories": [
+      "CAT_REPAY_PLAN"
+    ]
+  },
+  {
+    "name": "REPAY_RESULT_NOTIFY:t==1",
+    "category": "CAT_REPAY:t",
+    "previousCategories": [
+      "CAT_REPAY_PLAN",
+      "CAT_REPAY:t"
+    ]
+  },
+  {
+    "name": "REPAY_RESULT_NOTIFY:t>1",
+    "category": "CAT_REPAY:t",
+    "previousCategories": [
+      "CAT_REPAY:t-1",
+      "CAT_REPAY:t"
+    ]
+  },
+  {
+    "name": "REPAY_RESULT_CONFIRM:t>0",
+    "category": "CAT_REPAY:t",
+    "previousCategories": [
+      "CAT_REPAY:t"
+    ]
+  },
+  {
+    "name": "REPAY_RESULT_UNCONFIRM:t>0",
+    "category": "CAT_REPAY:t",
+    "previousCategories": [
+      "CAT_REPAY:t"
+    ]
+  },
+  {
+    "name": "ADD_REPAY_RESULT_NOTIFY:t>0",
+    "category": "CAT_ADD_REPAY:t",
+    "previousCategories": [
+      "CAT_REPAY:t",
+      "CAT_ADD_REPAY:t"
+    ]
+  },
+  {
+    "name": "ADD_REPAY_RESULT_CONFIRM:t>0",
+    "category": "CAT_ADD_REPAY:t",
+    "previousCategories": [
+      "CAT_ADD_REPAY:t"
+    ]
+  },
+  {
+    "name": "ADD_REPAY_RESULT_UNCONFIRM:t>0",
+    "category": "CAT_ADD_REPAY:t",
+    "previousCategories": [
+      "CAT_ADD_REPAY:t"
+    ]
+  },
+  {
+    "name": "BUYBACK_APPLY",
+    "category": "CAT_BUYBACK",
+    "previousCategories": [
+      "CAT_BUYBACK",
+      "CAT_LOAN",
+      "CAT_MORT",
+      "CAT_REPAY_PLAN",
+      "CAT_REPAY:t"
+    ]
+  },
+  {
+    "name": "BUYBACK_APPROVE",
+    "category": "CAT_BUYBACK",
+    "previousCategories": [
+      "CAT_BUYBACK"
+    ]
+  },
+  {
+    "name": "BUYBACK_REJECT",
+    "category": "CAT_BUYBACK",
+    "previousCategories": [
+      "CAT_BUYBACK"
+    ]
+  },
+  {
+    "name": "BUYBACK_RESULT_NOTIFY",
+    "category": "CAT_BUYBACK",
+    "previousCategories": [
+      "CAT_BUYBACK"
+    ]
+  },
+  {
+    "name": "BUYBACK_RESULT_CONFIRM",
+    "category": "CAT_BUYBACK",
+    "previousCategories": [
+      "CAT_BUYBACK"
+    ]
+  },
+  {
+    "name": "BUYBACK_RESULT_REJECT",
+    "category": "CAT_BUYBACK",
+    "previousCategories": [
+      "CAT_BUYBACK"
+    ]
+  }
+]

@@ -1,0 +1,875 @@
+[
+  {
+    "url": "loanApply",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425153030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000302",
+      "bizContent": {
+        "loanApply": {
+          "contractNo": "Z201704250001",
+          "pkgNo": "ql12",
+          "prodNo": "jyzb-one",
+          "productNo": "0000000001",
+          "productName": "测试资产",
+          "applicationPlace": "110000",
+          "applicationNo": "Z201704250001",
+          "sourceChannels": "05",
+          "application": "借贷",
+          "contractAmount": 10000,
+          "amountPayed": "300",
+          "currencyType": "01",
+          "periodType": "02",
+          "expiresMonth": 12,
+          "refundAccountType": "0201",
+          "refundAccount": "111111111111111",
+          "refundMethod": "01",
+          "chargeDateType": "01",
+          "chargeDateType2": "02",
+          "chargeDate": "31",
+          "managementInstitution": "JD",
+          "paymentWay": "01",
+          "loanType": "02",
+          "borrowerType": "01",
+          "handlingCharge": 1,
+          "monthlyRate": 12,
+          "penaltyRate": "0",
+          "monthlyPenaltyRate": "0",
+          "secureDay": "0",
+          "serviceCharge": "0",
+          "serviceChargeRate": "0",
+          "secureCharge": "0",
+          "secureChargeRate": "0",
+          "bankCode": "003",
+          "openAccountArea": "110000",
+          "earnestMoney": "0",
+          "applyType": 2
+        },
+        "loanUser": {
+          "name": "艾元",
+          "ceritificateType": "0",
+          "ceritificateNo": "130183198710041002",
+          "telephone": "12321234534",
+          "cellphone": "12323433454",
+          "maritalStatus": "01",
+          "education": "10"
+        },
+        "loanAccount": {
+          "loanAccountType": "11",
+          "loanBankCode": "003",
+          "loanAccountName": "abc",
+          "loanAccountNo": "123123123"
+        }
+      }
+    }
+  },
+  {
+    "url": "loanApprove",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425153230",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144883",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "approveResult": "01"
+      }
+    }
+  },
+  {
+    "url": "loanResultNotify",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425153330",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000304",
+      "bizContent": {
+        "payTradeNo": "20170406100041000003023938",
+        "contractNo": "Z201704250001",
+        "loanResult": "30",
+        "bankChargeDate": "1487782861000",
+        "calcInterestTime": "1487782861000"
+      }
+    }
+  },
+  {
+    "url": "loanResultConfirm",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425153430",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144886",
+      "bizContent": {
+        "payTradeNo": "20170406100041000003023938",
+        "bankChannelNo": "201704250010070250015091470",
+        "contractNo": "Z201704250001",
+        "confirmResult": "02",
+        "confirmRejectReason": "交易记录与放款结果不匹配"
+      }
+    }
+  },
+  {
+    "url": "loanResultNotify",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425153330",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000304",
+      "bizContent": {
+        "payTradeNo": "20170406100041000003023938",
+        "contractNo": "Z201704250001",
+        "loanResult": "30",
+        "bankChargeDate": "1487782861000",
+        "calcInterestTime": "1487782861001"
+      }
+    }
+  },
+  {
+    "url": "loanResultConfirm",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425153430",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144886",
+      "bizContent": {
+        "payTradeNo": "20170406100041000003023938",
+        "bankChannelNo": "201704250010070250015091470",
+        "contractNo": "Z201704250001",
+        "confirmResult": "01"
+      }
+    }
+  },
+  {
+    "url": "mortgageDocUpload",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425153530",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000306",
+      "bizContent": {
+        "files": [
+          {
+            "fileType": "001",
+            "fileName": "aiyuan04060000001_37_001.jpg",
+            "fileHash": "ff3f4036a1164d1ddbad5b3edf9022addb3e1961a54a922708a6c1ffc49e5489",
+            "filePath": "/upload/conforms/20170406/"
+          },
+          {
+            "fileType": "001",
+            "fileName": "aiyuan04060000001_60_001.pdf",
+            "fileHash": "e029cf5860792c862980509bf9ff267aac1612422351118fe808aad0fb0caf2e",
+            "filePath": "/upload/conforms/20170406/"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "url": "mortgageDocConfirm",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425153730",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144888",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "confirmResult": "02",
+        "confirmRejectReason": "质押文件不全"
+      }
+    }
+  },
+  {
+    "url": "mortgageDocUpload",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425153530",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000306",
+      "bizContent": {
+        "files": [
+          {
+            "fileType": "001",
+            "fileName": "aiyuan04060000001_37_001.jpg",
+            "fileHash": "ff3f4036a1164d1ddbad5b3edf9022addb3e1961a54a922708a6c1ffc49e5489",
+            "filePath": "/upload/conforms/20170406/"
+          },
+          {
+            "fileType": "001",
+            "fileName": "aiyuan04060000001_60_001.pdf",
+            "fileHash": "e029cf5860792c862980509bf9ff267aac1612422351118fe808aad0fb0caf2e",
+            "filePath": "/upload/conforms/20170407/"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "url": "diffResultNotify",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425153830",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144889",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "balanceTransferDirection": 1,
+        "balanceTransferAmount": 1234,
+        "balanceTransferDesc": "差额划拨描述..."
+      }
+    }
+  },
+  {
+    "url": "diffResultConfirm",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425154030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000307",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "confirmResult": "02",
+        "confirmRejectReason": "划拨金额不正确"
+      }
+    }
+  },
+  {
+    "url": "diffResultNotify",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425153830",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144889",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "balanceTransferDirection": 1,
+        "balanceTransferAmount": 1235,
+        "balanceTransferDesc": "差额划拨描述..."
+      }
+    }
+  },
+  {
+    "url": "diffResultConfirm",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425154030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000307",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "confirmResult": "01"
+      }
+    }
+  },
+  {
+    "url": "repayPlanUpload",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425154130",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000308",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "repayPlans": [
+          {
+            "issue": 1,
+            "refundDate": 20170425,
+            "refundInterest": 11.1,
+            "refundPrincipal": 222.2,
+            "singleMoney": 576.5,
+            "surplusPrincipal": 343.2
+          },
+          {
+            "issue": 2,
+            "refundDate": 20170525,
+            "refundInterest": 43.1,
+            "refundPrincipal": 343.2,
+            "singleMoney": 386.3,
+            "surplusPrincipal": 0
+          },
+          {
+            "issue": 3,
+            "refundDate": 20170625,
+            "refundInterest": 43.1,
+            "refundPrincipal": 343.2,
+            "singleMoney": 386.3,
+            "surplusPrincipal": 0
+          },
+          {
+            "issue": 4,
+            "refundDate": 20170725,
+            "refundInterest": 43.1,
+            "refundPrincipal": 343.2,
+            "singleMoney": 386.3,
+            "surplusPrincipal": 0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "url": "repayPlanConfirm",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425155030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144890",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "confirmResult": "02",
+        "confirmRejectReason": "还款计划有误"
+      }
+    }
+  },
+  {
+    "url": "repayPlanUpload",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425154130",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000308",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "repayPlans": [
+          {
+            "issue": 1,
+            "refundDate": 20170425,
+            "refundInterest": 11.1,
+            "refundPrincipal": 222.2,
+            "singleMoney": 576.5,
+            "surplusPrincipal": 343.2
+          },
+          {
+            "issue": 2,
+            "refundDate": 20170525,
+            "refundInterest": 43.1,
+            "refundPrincipal": 343.2,
+            "singleMoney": 386.3,
+            "surplusPrincipal": 0
+          },
+          {
+            "issue": 3,
+            "refundDate": 20170625,
+            "refundInterest": 43.1,
+            "refundPrincipal": 343.2,
+            "singleMoney": 386.3,
+            "surplusPrincipal": 0
+          },
+          {
+            "issue": 4,
+            "refundDate": 20170725,
+            "refundInterest": 43.1,
+            "refundPrincipal": 343.2,
+            "singleMoney": 386.3,
+            "surplusPrincipal": 1
+          }
+        ]
+      }
+    }
+  },
+  {
+    "url": "repayPlanConfirm",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425155030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144890",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "confirmResult": "01"
+      }
+    }
+  },
+  {
+    "url": "repayResultNotify",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425155030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000309",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "payTradeNo": "20170406100041000003023938",
+        "normal": true,
+        "orgRepayId": "A1test07",
+        "currentIssue": 1,
+        "currentIssueStatus": "01",
+        "chargeMethod": "01",
+        "chargeType": "01",
+        "chargeDate": 1486310400000,
+        "mitigateFlag": 0,
+        "refundAccount": "111111111111111",
+        "overdueDays": 3,
+        "bankChargeDate": "1487782861000",
+        "isExceedBankLimit": 20,
+        "repayResultType": 1,
+        "chargeAmount": 33.33,
+        "chargePrincipal": 22.2,
+        "reducedPrincipal": "0",
+        "subsidyPrincipal": "0",
+        "chargeRate": 11.1,
+        "reducedRate": 0,
+        "subsidyRate": 0,
+        "penaltyRate": 0,
+        "reducedPenaltyRate": 0,
+        "subsidyPenaltyRate": 0,
+        "penaltyAmount": 0,
+        "chargeMoney": 35,
+        "refundSecureCharge": 0,
+        "refundServiceCharge": 0,
+        "pendingOverpayment": 0,
+        "otherFee": 0,
+        "otherReducedFee": 0,
+        "otherSubsidy": 0,
+        "pendingWholesalePayment": 0
+      }
+    }
+  },
+  {
+    "url": "repayResultConfirm",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425162030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144891",
+      "bizContent": {
+        "payTradeNo": "20170406100041000003023938",
+        "bankChannelNo": "201704250010070250015091470",
+        "contractNo": "Z201704250001",
+        "normal": true,
+        "orgRepayId": "A1test07",
+        "currentIssue": 1,
+        "confirmResult": "02",
+        "confirmRejectReason": "还款结果与还款计划不匹配"
+      }
+    }
+  },
+  {
+    "url": "repayResultNotify",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425155030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000309",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "payTradeNo": "20170406100041000003023938",
+        "normal": true,
+        "orgRepayId": "A1test07",
+        "currentIssue": 1,
+        "currentIssueStatus": "01",
+        "chargeMethod": "01",
+        "chargeType": "01",
+        "chargeDate": 1486310400000,
+        "mitigateFlag": 0,
+        "refundAccount": "111111111111111",
+        "overdueDays": 3,
+        "bankChargeDate": "1487782861000",
+        "isExceedBankLimit": 20,
+        "repayResultType": 1,
+        "chargeAmount": 33.33,
+        "chargePrincipal": 22.2,
+        "reducedPrincipal": "0",
+        "subsidyPrincipal": "0",
+        "chargeRate": 11.1,
+        "reducedRate": 0,
+        "subsidyRate": 0,
+        "penaltyRate": 0,
+        "reducedPenaltyRate": 0,
+        "subsidyPenaltyRate": 0,
+        "penaltyAmount": 0,
+        "chargeMoney": 35,
+        "refundSecureCharge": 0,
+        "refundServiceCharge": 0,
+        "pendingOverpayment": 0,
+        "otherFee": 0,
+        "otherReducedFee": 0,
+        "otherSubsidy": 0,
+        "pendingWholesalePayment": 1
+      }
+    }
+  },
+  {
+    "url": "repayResultConfirm",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425162030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144891",
+      "bizContent": {
+        "payTradeNo": "20170406100041000003023938",
+        "bankChannelNo": "201704250010070250015091470",
+        "normal": true,
+        "contractNo": "Z201704250001",
+        "orgRepayId": "A1test07",
+        "currentIssue": 1,
+        "confirmResult": "01"
+      }
+    }
+  },
+  {
+    "url": "repayResultNotify",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425155030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000309",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "payTradeNo": "20170406100041000003023938",
+        "normal": true,
+        "orgRepayId": "A1test07",
+        "currentIssue": 2,
+        "currentIssueStatus": "01",
+        "chargeMethod": "01",
+        "chargeType": "01",
+        "chargeDate": 1486310400000,
+        "mitigateFlag": 0,
+        "refundAccount": "111111111111111",
+        "overdueDays": 3,
+        "bankChargeDate": "1487782861000",
+        "isExceedBankLimit": 20,
+        "repayResultType": 1,
+        "chargeAmount": 33.33,
+        "chargePrincipal": 22.2,
+        "reducedPrincipal": "0",
+        "subsidyPrincipal": "0",
+        "chargeRate": 11.1,
+        "reducedRate": 0,
+        "subsidyRate": 0,
+        "penaltyRate": 0,
+        "reducedPenaltyRate": 0,
+        "subsidyPenaltyRate": 0,
+        "penaltyAmount": 0,
+        "chargeMoney": 35,
+        "refundSecureCharge": 0,
+        "refundServiceCharge": 0,
+        "pendingOverpayment": 0,
+        "otherFee": 0,
+        "otherReducedFee": 0,
+        "otherSubsidy": 0,
+        "pendingWholesalePayment": 0
+      }
+    }
+  },
+  {
+    "url": "repayResultConfirm",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425162030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144891",
+      "bizContent": {
+        "payTradeNo": "20170406100041000003023938",
+        "bankChannelNo": "201704250010070250015091470",
+        "normal": true,
+        "contractNo": "Z201704250001",
+        "orgRepayId": "A1test07",
+        "currentIssue": 2,
+        "confirmResult": "01"
+      }
+    }
+  },
+  {
+    "url": "repayResultNotify",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425155030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000309",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "payTradeNo": "20170406100041000003023938",
+        "normal": false,
+        "orgRepayId": "A1test07",
+        "currentIssue": 1,
+        "currentIssueStatus": "01",
+        "chargeMethod": "01",
+        "chargeType": "01",
+        "chargeDate": 1486310400000,
+        "mitigateFlag": 0,
+        "refundAccount": "111111111111111",
+        "overdueDays": 3,
+        "bankChargeDate": "1487782861000",
+        "isExceedBankLimit": 20,
+        "repayResultType": 1,
+        "chargeAmount": 33.33,
+        "chargePrincipal": 22.2,
+        "reducedPrincipal": "0",
+        "subsidyPrincipal": "0",
+        "chargeRate": 11.1,
+        "reducedRate": 0,
+        "subsidyRate": 0,
+        "penaltyRate": 0,
+        "reducedPenaltyRate": 0,
+        "subsidyPenaltyRate": 0,
+        "penaltyAmount": 0,
+        "chargeMoney": 35,
+        "refundSecureCharge": 0,
+        "refundServiceCharge": 0,
+        "pendingOverpayment": 0,
+        "otherFee": 0,
+        "otherReducedFee": 0,
+        "otherSubsidy": 0,
+        "pendingWholesalePayment": 0
+      }
+    }
+  },
+  {
+    "url": "repayResultConfirm",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425162030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144891",
+      "bizContent": {
+        "payTradeNo": "20170406100041000003023938",
+        "bankChannelNo": "201704250010070250015091470",
+        "normal": false,
+        "contractNo": "Z201704250001",
+        "orgRepayId": "A1test07",
+        "currentIssue": 1,
+        "confirmResult": "02",
+        "confirmRejectReason": "还款金额不正确"
+      }
+    }
+  },
+  {
+    "url": "repayResultNotify",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425155030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000309",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "payTradeNo": "20170406100041000003023938",
+        "normal": false,
+        "orgRepayId": "A1test07",
+        "currentIssue": 1,
+        "currentIssueStatus": "01",
+        "chargeMethod": "01",
+        "chargeType": "01",
+        "chargeDate": 1486310400000,
+        "mitigateFlag": 0,
+        "refundAccount": "111111111111111",
+        "overdueDays": 3,
+        "bankChargeDate": "1487782861000",
+        "isExceedBankLimit": 20,
+        "repayResultType": 1,
+        "chargeAmount": 33.33,
+        "chargePrincipal": 22.2,
+        "reducedPrincipal": "0",
+        "subsidyPrincipal": "0",
+        "chargeRate": 11.1,
+        "reducedRate": 0,
+        "subsidyRate": 0,
+        "penaltyRate": 0,
+        "reducedPenaltyRate": 0,
+        "subsidyPenaltyRate": 0,
+        "penaltyAmount": 0,
+        "chargeMoney": 35,
+        "refundSecureCharge": 0,
+        "refundServiceCharge": 0,
+        "pendingOverpayment": 0,
+        "otherFee": 0,
+        "otherReducedFee": 0,
+        "otherSubsidy": 0,
+        "pendingWholesalePayment": 1
+      }
+    }
+  },
+  {
+    "url": "repayResultConfirm",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425162030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144891",
+      "bizContent": {
+        "payTradeNo": "20170406100041000003023938",
+        "bankChannelNo": "201704250010070250015091470",
+        "normal": false,
+        "contractNo": "Z201704250001",
+        "orgRepayId": "A1test07",
+        "currentIssue": 1,
+        "confirmResult": "01"
+      }
+    }
+  },
+  {
+    "url": "buybackApply",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425163030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144892",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "buybackCategory": "02",
+        "buybackReason": "质押文件上传不合规",
+        "loanStartDate": "20170426",
+        "loanTotal": 123456,
+        "expiry": 12,
+        "unexpirePrincipal": 0,
+        "unpaidPrincipal": 0,
+        "unpaidInterest": 0,
+        "lateChargeInterest": 0,
+        "overdueTotalDay": 0,
+        "overdueTotalCount": 0,
+        "buybackMoney": 123456,
+        "proName": "..."
+      }
+    }
+  },
+  {
+    "url": "buybackApprove",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425172030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000314",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "buybackStatus": "20",
+        "rejectReason": "..."
+      }
+    }
+  },
+  {
+    "url": "buybackApply",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425163030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144892",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "buybackCategory": "02",
+        "buybackReason": "质押文件上传不合规",
+        "loanStartDate": "20170426",
+        "loanTotal": 123456,
+        "expiry": 12,
+        "unexpirePrincipal": 0,
+        "unpaidPrincipal": 0,
+        "unpaidInterest": 0,
+        "lateChargeInterest": 0,
+        "overdueTotalDay": 0,
+        "overdueTotalCount": 0,
+        "buybackMoney": 123457,
+        "proName": "..."
+      }
+    }
+  },
+  {
+    "url": "buybackApprove",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425172030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000313",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "buybackStatus": "10"
+      }
+    }
+  },
+  {
+    "url": "buybackResultNotify",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425173030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144893",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "buybackStatus": "30",
+        "buybackSuccTime": "20170425153010",
+        "payTradeNo": "20170406100041000003023938",
+        "bankChannelNo": "201704250010070250015091470"
+      }
+    }
+  },
+  {
+    "url": "buybackResultConfirm",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425183030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000317",
+      "bizContent": {
+        "payTradeNo": "20170406100041000003023938",
+        "bankChannelNo": "201704250010070250015091470",
+        "contractNo": "Z201704250001",
+        "confirmResult": "02",
+        "confirmRejectReason": "confirm Reject"
+      }
+    }
+  },
+  {
+    "url": "buybackResultNotify",
+    "operator": "orgJD",
+    "requestData": {
+      "orgCode": "cloudFactory",
+      "timestamp": "20170425173030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "jyzb2017042516243566144893",
+      "bizContent": {
+        "contractNo": "Z201704250001",
+        "buybackStatus": "30",
+        "buybackSuccTime": "20170425153010",
+        "payTradeNo": "20170406100041000003023938",
+        "bankChannelNo": "201704250010070250015091471"
+      }
+    }
+  },
+  {
+    "url": "buybackResultConfirm",
+    "operator": "orgJY",
+    "requestData": {
+      "orgCode": "jyzb",
+      "timestamp": "20170425183030",
+      "assetUid": "jyzb0000000001Z201704250001",
+      "outTradeNo": "JYJD20170000000317",
+      "bizContent": {
+        "payTradeNo": "20170406100041000003023938",
+        "bankChannelNo": "201704250010070250015091470",
+        "contractNo": "Z201704250001",
+        "confirmResult": "01"
+      }
+    }
+  }
+]

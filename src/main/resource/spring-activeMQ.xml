@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:amq="http://activemq.apache.org/schema/core"
+	xmlns:jms="http://www.springframework.org/schema/jms"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd  
+                        http://www.springframework.org/schema/context  
+                        http://www.springframework.org/schema/context/spring-context-4.0.xsd  
+                        http://www.springframework.org/schema/mvc  
+                        http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+				        http://www.springframework.org/schema/jms
+				        http://www.springframework.org/schema/jms/spring-jms-4.0.xsd
+				        http://activemq.apache.org/schema/core
+				        http://activemq.apache.org/schema/core/activemq-core-5.8.0.xsd">
+
+
+	<!-- 引入配置文件 -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<!-- <property name="location" value="classpath:jdbc.properties" /> -->
+		<property name="locations">
+			<list>
+				<value>classpath:jdbc.properties</value>
+				<value>classpath:activemq.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 配置JMS连接工厂 -->
+	<bean id="jmsConnectionFactory"
+		class="org.springframework.jms.connection.CachingConnectionFactory">
+		<!-- Session缓存数量 -->
+		<property name="sessionCacheSize" value="${activemq.sessionCacheSize}" />
+		<property name="targetConnectionFactory">
+			<bean class="org.apache.activemq.ActiveMQConnectionFactory">
+				<!-- MQ地址 -->
+				<property name="brokerURL" value="tcp://${activemq.ip}:61616" />
+				<property name="userName" value="${activemq.userName}" />
+				<property name="password" value="${activemq.password}" />
+				<!-- <property name="brokerURL" value="stomp://localhost:61613" /> -->
+				<!-- 是否异步发送 -->
+				<property name="useAsyncSend" value="${activemq.useAsyncSend}" />
+			</bean>
+		</property>
+	</bean>
+
+
+	<!-- 发送消息的目的地（一个主题） -->
+	<bean id="blockDestination" class="org.apache.activemq.command.ActiveMQTopic">
+		<!-- 设置消息主题的名字 -->
+		<constructor-arg index="0" value="${activemq.topicName.block}" />
+	</bean>
+	<bean id="transactionDestination" class="org.apache.activemq.command.ActiveMQTopic">
+		<constructor-arg value="${activemq.topicName.transaction}" />
+	</bean>
+
+
+	<!-- 配置JMS模版 -->
+	<bean id="blockJmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="jmsConnectionFactory" />
+		<property name="defaultDestination" ref="blockDestination" />
+		<!-- 订阅发布模式 -->
+		<property name="pubSubDomain" value="true" />
+		<!-- <property name="receiveTimeout" value="20000" /> -->
+		<!-- <property name="timeToLive" value="20000" /> -->
+		<!-- <property name="messageTimestampEnabled" value="true" /> -->
+	</bean>
+	<!-- 配置JMS模版 -->
+	<bean id="transactionJmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="jmsConnectionFactory" />
+		<property name="defaultDestination" ref="transactionDestination" />
+		<!-- 订阅发布模式 -->
+		<property name="pubSubDomain" value="true" />
+	</bean>
+</beans>  
